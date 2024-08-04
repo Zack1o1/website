@@ -1,0 +1,40 @@
+:root{
+
+    --clr-txt-primary:var(--clr-light);
+    --clr-txt-secondary:var(--clr-dark);
+    --clr-txt-tertiary:var(--clr-crimson);
+    --clr-txt-tertiary-2:var(--clr-grey);
+
+
+    --bg-primary:var(--clr-dark);
+    --bg-secondary:var(--clr-light-grey);
+    --bg-tertiary: var(--clr-crimson);
+
+    --container-width:90%;
+    --gallery-img-height:350px;
+
+    
+  
+
+    --nav-link-txt-fs: var(--fs-medium);
+    
+    --title-fw: var(--fw-600);
+    --sub-title-fw: var(--fw-500);
+
+    --fs-normal: 1rem;
+    --fs-medium: 1.2rem;
+    --fs-large: 1.8rem;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+
+
+    --clr-light : #fff;
+    --clr-dark : #000;
+    --clr-crimson : #c22d17;
+    --clr-grey: rgb(128, 128, 128);
+    --clr-light-grey:#ffffffd3;
+    
+}

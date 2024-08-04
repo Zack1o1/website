@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lalit Rajbanshi">
+    <meta name="year" content="2024 July">
+    <meta name="description" content="Know about characters in demon slayer">
+    <title>Demon Slayer: Kimetsu no Yaiba 鬼滅の刃</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="icon" href="../logo/logo_demon.jpeg">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
+     <style>
+        .coming-soon{
+            height: 80vh;
+            color: #000;
+            padding: 13rem 0 3rem;
+            font-size: 4rem;
+            background-color: #ffffffd3;
+            line-height: 1.3;
+        }
+        .coming-soon__content.row{
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        @media (max-width:600px){
+            .coming-soon{
+                padding-top: 20rem;
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--======================================================
+           Header -> Navigation Logo Hamburger Menu
+    ======================================================         -->    
+    <header class="header">
+        <div class="container row">
+           <!-- Logo of Demon SLayer -->
+            <div class="logo">
+                <img class="logo__img" src="../logo/logo_demon.jpeg" alt="">
+            </div>
+            <!-- Navigation List -->
+             <nav id="nav" class="nav hidden">
+                <ul class="nav__list" data-nav-list="navigation_list">
+                    <li class="nav__list__item"><a data-link="navigation__link" href="../index.html" class="nav__list__item__link">Home</a></li>
+                    <li class="nav__list__item"><a data-link="navigation__link" href="../season/season.html" class="nav__list__item__link">Season</a></li>
+                    <li class="nav__list__item"><a data-link="navigation__link" href="../gallery/gallery.html" class="nav__list__item__link">Gallery</a></li>
+                    <li class="nav__list__item"><a data-link="navigation__link" href="character.html" class="nav__list__item__link">Character</a></li>
+                </ul>
+            </nav>
+           <!-- Hamburger Menu -->
+            <div class="hamburger-menu" id="menu">
+                <span id="hamburger-menu__content" class="material-symbols-outlined">menu</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="coming-soon">
+        <div class="container coming-soon__content row">
+            <p>Coming Soon....</p>
+            <p>Arigato</p>
+        </div>
+    </section>
+    <!--======================================================
+            Footer Section
+    ======================================================         -->
+    <footer class="footer">
+        <p><span class="copyright">&copy;</span> Lalit Rajbanshi</p>
+        <p>Made with <span class="heart">&hearts;</span></p>
+    </footer>
+
+<!--======================================================
+            Script for Hamburger Menu
+    ======================================================         -->
+    <script>
+        let menu = document.getElementById('menu')
+        let menu__content = document.getElementById('hamburger-menu__content')
+        let navigation = document.getElementById('nav')
+
+        menu.addEventListener('click',()=>{
+            navigation.classList.toggle('hidden')
+            menu__content.textContent = navigation.classList.contains('hidden') ? 'menu' : 'close';
+        })
+    </script>
+</body>
+</html>

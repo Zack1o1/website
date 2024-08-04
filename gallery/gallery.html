@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lalit Rajbanshi">
+    <meta name="year" content="2024 July">
+    <meta name="description" content="Know about characters in demon slayer">
+    <title>Demon Slayer: Kimetsu no Yaiba 鬼滅の刃</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="icon" href="../logo/logo_demon.jpeg">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+<!--======================================================
+           Header -> Navigation Logo Hamburger Menu
+    ======================================================         -->    
+    <header class="header">
+        <div class="container row">
+           <!-- Logo of Demon SLayer -->
+            <div class="logo">
+                <img class="logo__img" src="../logo/logo_demon.jpeg" alt="">
+            </div>
+            <!-- Navigation List -->
+             <nav id="nav" class="nav hidden">
+                <ul class="nav__list" data-nav-list="navigation_list">
+                    <li class="nav__list__item"><a data-link="navigation__link" href="../index.html" class="nav__list__item__link">Home</a></li>
+                    <li class="nav__list__item"><a data-link="navigation__link" href="../season/season.html" class="nav__list__item__link">Season</a></li>
+                    <li class="nav__list__item"><a data-link="navigation__link" href="gallery.html" class="nav__list__item__link">Gallery</a></li>
+                    <li class="nav__list__item"><a data-link="navigation__link" href="../character/character.html" class="nav__list__item__link">Character</a></li>
+                </ul>
+            </nav>
+           <!-- Hamburger Menu -->
+            <div class="hamburger-menu" id="menu">
+                <span id="hamburger-menu__content" class="material-symbols-outlined">menu</span>
+            </div>
+        </div>
+    </header>
+    <!--======================================================
+            Gallery Section
+    ======================================================         -->
+    <main class="gallery gallery-section">
+        <div class="container">
+            <h1 class="title">Gallery</h1>
+            <div class="pagination row pagination-top-one">
+                <a class="pagination__link " href="gallery.html" data-link="pagination-link"><</a>
+                <a class="selected pagination__link pagination_1" href="gallery.html" data-link="pagination-link">1</a>
+                <a class="pagination__link pagination_2" href="gallery-2.html" data-link="pagination-link">2</a>
+                <a class="pagination__link pagination_3" href="gallery-3.html" data-link="pagination-link">3</a>
+                <a class="pagination__link " href="gallery-2.html" data-link="pagination-link">></a>
+            </div>
+            <div class="image-wrapper">
+                <img src="../images/demonSlayer-un.png" alt="">
+                <img src="../images/demonSlayer-butterfly.jpg" alt="">
+                <img src="../images/demonSlayer-Nezuko.jpg" alt="">
+                <img src="../images/demonSlayer-peace.jpg" alt="">
+                <img src="../images/demonSlayer-renguko.jpg" alt="">
+                <img src="../images/demonSlayer-snake.jpg" alt="">
+                <img src="../images/demonSlayer-tanjiro.jpg" alt="">
+                <img src="../images/inoske.jpg" alt="">
+                <img src="../images/demonSlayer.jpg" alt="">
+                <img src="../images/nezuko-dawn.jpg" alt="">
+                <img src="../images/hashira.jpg" alt="">
+                <img src="../images/tamiko-dawn.jpg" alt="">
+            </div>
+            <div class="pagination row">
+                <a class="pagination__link " href="gallery.html" data-link="pagination-link"><</a>
+                <a class="selected pagination__link pagination_1" href="gallery.html" data-link="pagination-link">1</a>
+                <a class="pagination__link pagination_2" href="gallery-2.html" data-link="pagination-link">2</a>
+                <a class="pagination__link pagination_3" href="gallery-3.html" data-link="pagination-link">3</a>
+                <a class="pagination__link " href="gallery-2.html" data-link="pagination-link">></a>
+            </div>
+        </div>
+    </main>
+
+    <!--======================================================
+            Footer Section
+    ======================================================         -->
+    <footer class="footer">
+        <p><span class="copyright">&copy;</span> Lalit Rajbanshi</p>
+        <p>Made with <span class="heart">&hearts;</span></p>
+    </footer>
+
+<!--======================================================
+            Script for Hamburger Menu
+    ======================================================         -->
+    <script>
+        let menu = document.getElementById('menu')
+        let menu__content = document.getElementById('hamburger-menu__content')
+        let navigation = document.getElementById('nav')
+
+        menu.addEventListener('click',()=>{
+            navigation.classList.toggle('hidden')
+            menu__content.textContent = navigation.classList.contains('hidden') ? 'menu' : 'close';
+        })
+    </script>
+</body>
+</html>

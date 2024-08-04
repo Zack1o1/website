@@ -1,0 +1,77 @@
+
+@media (max-width:992px){
+    /* ======================================================
+        Style for Gallery
+    ======================================================      */
+    .image-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+}
+@media (max-width:768px){
+    /* ======================================
+        Style for Header
+====================================== */
+    .hamburger-menu{
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        padding-right: 5%;
+    }
+    .nav.hidden{
+        display: none;
+    }
+    .nav{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 4rem;
+        width: 50vw;
+        height: 100vh;
+        background-color: var(--bg-primary);
+    }
+
+    .nav__list{
+        flex-direction: column;
+    }
+    .nav__list__item::after{
+        display: none;
+    }
+
+/* ======================================
+        Style for Hero section 
+====================================== */
+
+    .hero-section .row{
+        flex-direction: column-reverse;
+        gap: 4rem;
+    }
+}
+
+
+@media (max-width:600px){
+    /* ======================================================
+        Style for Gallery
+    ======================================================      */
+    .image-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .image-wrapper img[title="Zenitsu Agatsuma"]{
+        object-position: 0% 20%;
+    }
+    .pagination.pagination-top-one{
+        display: none;
+    }
+}
+
+@media (max-width:400px){
+    /* ======================================================
+    Style for Pagination
+======================================================      */
+.pagination.row{
+    gap: .7rem;
+
+}
+}

@@ -1,0 +1,214 @@
+/* ======================================
+    resuable css class in the html
+====================================== */
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    width: var(--container-width);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ======================================
+Style for Header class
+====================================== */
+.header{
+    background-color: var(--bg-tertiary);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.logo{
+    padding: .5rem 0;
+    width: 80px;
+}
+
+.logo__img{
+    border-radius: 50px;
+    width: 100%;
+}
+
+.nav__list{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__list__item{
+    position: relative;
+    padding-bottom: .3rem;
+}
+
+.nav__list__item::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--clr-txt-primary);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+
+.nav__list__item:hover::after{
+    width: 100%;
+    opacity: .6;
+}
+.nav__list__item__link{
+    color: var(--clr-txt-primary);
+    font-weight: 500;
+    font-size: var(--nav-link-txt-fs);
+}
+
+.nav__list__item__link:hover,
+.nav__list__item__link:focus{
+    opacity: .9;
+    outline: none;
+}
+
+.hamburger-menu{
+    display: none;
+    color: var(--clr-txt-primary);
+}
+
+/* ======================================
+Style for Hero section 
+====================================== */
+.hero-section{
+    padding: 10rem 0 0;
+    background-color: var(--bg-primary);
+    color: var(--clr-txt-primary);
+}
+.title{
+    font-weight: var(--title-fw);
+}
+.hero-section .row{
+    padding: 5rem 0;
+    align-items: flex-start;
+}
+.sub-title{
+    font-weight: var(--sub-title-fw);
+}
+.hero-section__about-content{
+    width: 100%;
+}
+.hero-section__description{
+    padding-right: 2rem;
+}
+.hero-section__video{
+    padding-top: .5rem;
+    flex-grow: 2;
+}
+.hero-section__video video{
+    border-radius: 5px;
+}
+.hero-section__sub-content{
+    color: var(--clr-txt-tertiary-2);
+    padding: 1rem 0;
+    font-size: .9rem;
+}
+.hero-section__content span{
+    padding-right: .1rem;
+}
+
+/* ======================================================
+    Style for Gallery
+======================================================      */
+.gallery.gallery-section{
+    padding: 9rem 0 4rem;
+}
+.gallery-section{
+    padding: 3rem 0 2rem;
+    background-color: var(--bg-secondary);
+    color: var(--clr-txt-secondary);
+
+}
+.gallery-section__see-more{
+   padding-bottom: 4rem;
+
+}
+.gallery-section__see-more a{
+    color: var(--clr-txt-tertiary);
+    font-weight: var(--fw-600);
+}
+.image-wrapper img{
+    height: var(--gallery-img-height); 
+    object-fit: cover;
+    object-position: 50% 0;
+    border-radius: 10px;
+    box-shadow: 0px 12px 15px -3px rgb(14, 13, 13);
+}
+.image-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding:4rem 0 2rem;
+}
+
+/* ======================================================
+    Style for Footer
+======================================================      */
+.footer{
+    padding: 4rem 0;
+    background-color: var(--bg-primary);
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: normal;
+}
+.footer p:last-child{
+    color: var(--clr-txt-tertiary-2);
+    font-size: 1rem;
+}
+.copyright{
+    font-size: 1.8rem;
+}
+.heart{
+    font-size: 1.6rem;
+    color: var(--clr-txt-tertiary);
+}
+
+/* ======================================================
+    Style for Pagination
+======================================================      */
+.pagination.row{
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 1.5rem;
+}
+.pagination.pagination-top-one{
+    padding-top: 3rem;
+}
+.pagination__link{
+    padding: .1rem 1rem;
+    font-weight: var(--fw-600);
+    font-size: 1.2rem;
+    color: var(--clr-txt-tertiary);
+    transition: all .3s ease-in-out;
+}
+
+.selected.pagination_1{
+    background-color: var(--bg-tertiary);
+    color: var(--clr-txt-primary);
+}
+.selected.pagination_2{
+    background-color: var(--bg-tertiary);
+    color: var(--clr-txt-primary);
+}
+.selected.pagination_3{
+    background-color: var(--bg-tertiary);
+    color: var(--clr-txt-primary);
+}
+.pagination_1:hover{
+    opacity: .9;
+}
+.pagination__link:hover{
+    background-color: var(--bg-tertiary);
+    color: var(--clr-txt-primary);
+}
